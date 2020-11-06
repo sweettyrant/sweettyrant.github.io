@@ -1,0 +1,133 @@
+html, body
+{
+	margin: 0;
+	height: 100%;
+
+	background-color: #272332;
+	color: #EFE3AF;
+
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#header 
+{
+	background-image: url("../img/4.jpg");
+
+	height: 100%;
+
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; /* don't scroll */
+
+}
+
+.container{text-align: center;}
+
+
+#inbetween
+{
+	text-align: center;
+	font-weight: bolder;
+}
+
+
+#platforms
+{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+
+.video
+{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#platforms img{width: 75%}
+
+img{width: 100%;}
+
+.title
+{
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Homemade Apple', cursive;
+	/*letter-spacing: -5px;*/
+
+	text-align: center;
+	line-height: normal;
+
+
+	background: -webkit-linear-gradient(#EFE3AF, #E66D6C);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+a
+{
+	text-decoration: none;
+	color: #EFE3AF;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #E66D6C;
+}
+
+.btn
+{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+
+	background-color: transparent;
+	color: #EFE3AF;
+	border-color: #EFE3AF; 
+
+	padding: 15px 20px;
+}
+
+.btn:hover
+{
+	background: #EFE3AF;
+}
+
+
+.table
+{
+	color: #EFE3AF;
+}
+
+.table-hover tbody tr:hover td, 
+.table-hover tbody tr:hover th  
+{
+	background: #EFE3AF;
+}
+
+
+
+
+
+
+@media all and (orientation:portrait)
+{
+	img{width: 100%}
+
+	#platforms
+	{
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.container
+	{
+	   	min-width:100% !important;
+	   	max-width:100% !important;
+	}
+}
