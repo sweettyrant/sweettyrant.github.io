@@ -39,6 +39,12 @@ html, body
 	margin-right: 20%;
 }
 
+#platforms img
+{
+	width: 75%; 
+	cursor: pointer;
+}
+
 
 .video
 {
@@ -47,16 +53,17 @@ html, body
     justify-content: center;
 }
 
-#platforms img{width: 75%}
 
 img{width: 100%;}
+
+#album_art img{width: 60%;}
 
 .title
 {
 	font-size: 50px;
 	font-weight: bold;
 	font-family: 'Homemade Apple', cursive;
-	/*letter-spacing: -5px;*/
+	letter-spacing: -5px;
 
 	text-align: center;
 	line-height: normal;
@@ -117,6 +124,12 @@ a:hover
 
 @media all and (orientation:portrait)
 {
+	.container
+	{
+	   	min-width:100% !important;
+	   	max-width:100% !important;
+	}
+
 	img{width: 100%}
 
 	#platforms
@@ -125,9 +138,5 @@ a:hover
 		margin-right: 0;
 	}
 
-	.container
-	{
-	   	min-width:100% !important;
-	   	max-width:100% !important;
-	}
+	#album_art img{width: 100%;}s
 }
