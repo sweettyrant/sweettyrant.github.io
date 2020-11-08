@@ -12,7 +12,7 @@ html, body
 
 #header 
 {
-	background-image: url("../img/6.jpg");
+	background-image: url("../img/4.jpg");
 
 	height: 100%;
 
@@ -168,8 +168,8 @@ a:hover
 
 	#social_media
 	{
-		padding-left: 20%;
-		padding-right: 20%;
+		padding-left: 30%;
+		padding-right: 30%;
 	}
 
 	#album_art img{width: 100%}

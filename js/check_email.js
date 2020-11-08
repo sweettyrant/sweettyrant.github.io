@@ -4,7 +4,7 @@ function check_email()
     
 	if(document.forms['newsletter_form'].newsletter_input.value === "")
 	{
-		document.getElementById('newsletter_btn').innerHTML = '<i>Enter An Email Address</i>';
+		document.getElementById('newsletter_btn').innerHTML = '<i>Enter Email</i>';
 		setTimeout(function(){document.getElementById('newsletter_btn').innerHTML = 'Join Newsletter'}, 3000);
 	}
 	else
@@ -20,7 +20,7 @@ function check_email()
 		else
 		{
 			document.forms['newsletter_form'].newsletter_input.value = "";
-			document.getElementById('newsletter_btn').innerHTML = '<i>Enter A Valid Email Address</i>';
+			document.getElementById('newsletter_btn').innerHTML = '<i>Enter Valid Email</i>';
 			setTimeout(function(){document.getElementById('newsletter_btn').innerHTML = 'Join Newsletter'}, 3000);
 		}	
 	}
