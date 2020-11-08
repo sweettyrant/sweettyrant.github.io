@@ -10,6 +10,16 @@ html, body
 }
 
 
+@font-face 
+{
+    font-family: 'breathing_personal_useregular';
+    src: url('breathing-webfont.woff2') format('woff2'),
+         url('breathing-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 #header 
 {
 	background-image: url("../img/4.jpg");
@@ -21,9 +31,22 @@ html, body
 	background-size: cover;
 	background-attachment: fixed; /* don't scroll */
 
+	/* for the name */
+	display: flex;
+	justify-content: center;
+	align-items: center; 
 }
 
-.container{text-align: center;}
+
+#name
+{
+	font-size: 150px;
+	font-family: 'breathing_personal_useregular';
+
+	position: fixed;
+}
+
+.container{text-align: center}
 
 
 #inbetween
@@ -64,16 +87,12 @@ img{width: 100%;}
 {
 	font-size: 50px;
 	font-weight: bold;
-	font-family: 'Homemade Apple', cursive;
-	letter-spacing: -5px;
+	font-family: 'breathing_personal_useregular';
 
 	text-align: center;
 	line-height: normal;
 
-
-	background: -webkit-linear-gradient(#EFE3AF, #E66D6C);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	color: #EFE3AF;
 }
 
 
