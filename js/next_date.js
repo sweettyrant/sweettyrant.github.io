@@ -8,7 +8,17 @@ function next_date()
 	{
 		var next_date = new Date(date.getFullYear(), date.getMonth(), date.getDate() + (i/2) * i);
 
-		document.getElementById('week' + i).innerHTML  = days[next_date.getDay()] + ' ' + next_date.getDate() + ' ' + months[next_date.getMonth()] + ' ' + next_date.getFullYear();
+		var generated_date = days[next_date.getDay()] + ' ' 
+								+ next_date.getDate() + ' ' 
+								+ months[next_date.getMonth()] + ' ' 
+								+ next_date.getFullYear();
+
+		var sold_out_tag = Math.floor(Math.random() * 3) + 1;	
+
+		if(sold_out_tag === 1)
+			generated_date += ' [SOLD OUT]';
+
+		document.getElementById('week' + i).innerHTML = generated_date
 	}
 }
 
