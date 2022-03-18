@@ -3,193 +3,193 @@ html, body
 	margin: 0;
 	height: 100%;
 
-	background-color: #272332;
-	color: #EFE3AF;
+	background-color: #1d1920;
+	color: #f9f4d7;
 
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+
+	position: relative;
 }
 
+/*.photos {
+    max-width:20%;
+}*/
 
-@font-face 
+body img {
+  position: absolute;
+  left:0;
+  transition: opacity 1s ease-in-out;
+/*  max-width: 30%;
+  max-height: 50%;*/
+}
+
+.poemPage
 {
-    font-family: 'breathing_personal_useregular';
-    src: url('breathing-webfont.woff2') format('woff2'),
-         url('breathing-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+/*	height: 100%;*/
+	width: 100%;
+
+	position: relative;
+	z-index: 3;
 }
 
-
-#header 
+.poemTitle
 {
-	background-image: url("../img/4.jpg");
-
-	height: 100%;
-
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed; /* don't scroll */
-
-	/* for the name */
-	display: flex;
-	justify-content: center;
-	align-items: center; 
+	font-style: italic;
+	z-index: 3;
 }
 
-
-#name
+.poemText
 {
-	font-size: 150px;
-	font-family: 'breathing_personal_useregular';
-
-	position: fixed;
-}
-
-.container{text-align: center}
-
-
-#inbetween
-{
-	text-align: center;
-	font-weight: bolder;
+	z-index: 3;
 }
 
 
-#platforms
-{
-	padding-left: 20%;
-	padding-right: 20%;
-}
 
-#platforms img
-{
-	width: 75%; 
-	cursor: pointer;
-}
-
-
-.video
-{
-	display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-img{width: 100%;}
-
-
-#album_art img{width: 60%;}
-
-
-.title
+.arrows
 {
 	font-size: 50px;
-	font-weight: bold;
-	font-family: 'breathing_personal_useregular';
-
-	text-align: center;
-	line-height: normal;
-
-	color: #EFE3AF;
 }
 
+#sidebar
+{
+    top: 25%;
+/*    background-color: blue;*/
+	z-index: 3;
+}
+
+#sidebar ul {list-style: none}
 
 a
 {
 	text-decoration: none;
-	color: #EFE3AF;
+	color: #fbeed5;
 }
 
-a:hover
+a:hover {color: #fcd884}
+
+a:active {color: #7b404b}
+
+.test
+{
+	font-size: 100px;
+	background-color: blue;
+	color: white;
+
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+}
+
+#header
+{
+	width: 100%;
+
+	position: fixed;
+
+	z-index: 10;
+
+	top: 0;
+	left: 0;
+
+	background: #25233E;
+
+	font-size: 60px;
+	text-align: center;
+
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+
+/*Menu*/
+#menu
+{
+	height: 100%;
+ 	
+	position: fixed;
+
+	z-index: 10;
+
+	top: 10%;
+	right: 0;
+	left: 0;
+	bottom: 0;
+
+	overflow-x: hidden;
+
+	background: #7b404b;
+
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#menu a
 {
 	text-decoration: none;
-	color: #E66D6C;
 }
 
-
-.btn
+#menu ul
 {
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-
-	background-color: transparent;
-	color: #EFE3AF;
-	border-color: #EFE3AF; 
-
-	padding: 15px 20px;
+	list-style: none;
 }
 
-.btn:hover{background: #EFE3AF}
 
-
-.table{color: #EFE3AF}
-
-.table-hover tbody tr:hover td, 
-.table-hover tbody tr:hover th  
+#menu ul a
 {
-	background: #EFE3AF;
+	text-decoration: none;
+	color: #fbeed5;
 }
 
-
-#newsletter_input
+#menu ul a:active
 {
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-
-	background-color: transparent;
-	color: #EFE3AF;
-	border-color: #EFE3AF;
-
-	border:none;
-    border-bottom: 2px dashed #EFE3AF;
-
-	padding: 17px 20px;
+	color: #ef8a7d;
 }
 
 
-#social_media
+/*For desktop*/
+@media all and (orientation:landscape)
 {
-	padding-left: 40%;
-	padding-right: 40%;
-}
-
-#social_media img
-{
-	filter: invert(90%) sepia(28%) saturate(335%) hue-rotate(360deg) brightness(98%) contrast(92%);
-}
-
-#social_media img:hover, #social_media img:active
-{
-	filter: invert(78%) sepia(56%) saturate(4360%) hue-rotate(312deg) brightness(90%) contrast(102%);
+	#header, #menu, #aboutTab
+	{
+		display: none;
+	}
 }
 
 
 
+
+/*For mobile*/
 @media all and (orientation:portrait)
 {
+	body
+	{
+		font-size: 14px;
+	}
+
 	.container
 	{
-	   	min-width:100% !important;
-	   	max-width:100% !important;
+		padding: 0px !important;
 	}
 
-	img{width: 100%}
-
-	#platforms
+	#sidebar, #menu, #aboutTab
 	{
-		padding-left: 0;
-		padding-right: 0;
+		display: none;
 	}
+}
 
-	#social_media
+
+
+/*	#textarea
 	{
-		padding-left: 30%;
-		padding-right: 30%;
-	}
+		top: 10%;
+		left: 0%;
 
-	#album_art img{width: 100%}
+		padding: 10% 5% 10% 5%;
+	}*/
+
+/*	#poemsTab
+	{
+		col-12;
+	}*/
+
 }
