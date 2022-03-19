@@ -4,40 +4,41 @@ $(document).ready
 (
     function() 
     {
-        $("#sidebar a").click(function() 
+        $("#sidebar .maincategory a").click(function() 
         {
             var x = this.id;
 
-            console.log('heeeeeeeeeeeeey' + x);
-        	// $("#poemsTab").children().hide();
-         //    $("#" + x).fadeToggle();
 
-            
+
+        	$("#textarea").children().hide();
+            $("#" + x + "Tab").fadeToggle();  
         });
 
-        // $("#sidebar .poemsubcategory a").click(function() 
-        // {
-        // 	var x = this.id;
+        $("#sidebar .poemsubcategory a").click(function() 
+        {
+        	var x = this.id;
 
-        // 	$("#textarea").children().hide();
-        //     $("#poemstab").fadeToggle();
-        // });
+            console.log("EHEEEE " + x)
+
+        	$("#textarea").children().hide();
+            $("#poemsTab").fadeToggle();
+        });
 
 
-        // $("#menu .maincategory a").click(function() 
-        // {
-        //     var x = this.id;
+        $("#menu .maincategory a").click(function() 
+        {
+            var x = this.id;
 
-        //     $("#textarea").children().hide();
-        //     $("#" + x + "tab").fadeToggle();
-        // });
+            $("#textarea").children().hide();
+            $("#" + x + "Tab").fadeToggle();
+        });
 
-        // $("#menu .poemsubcategory a").click(function() 
-        // {
-        //     var x = this.id;
+        $("#menu .poemsubcategory a").click(function() 
+        {
+            var x = this.id;
 
-        //     $("#textarea").children().hide();
-        //     $("#poemstab").fadeToggle();
-        // });
+            $("#textarea").children().hide();
+            $("#poemsTab").fadeToggle();
+        });
     }
 );

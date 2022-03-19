@@ -17,195 +17,212 @@
 	  	<script src="js/toggler.js"></script>
 	  	<script src="js/mobileMenu.js"></script>
 	  	<script src="js/hideShowTabs.js"></script>
-<!-- 	  	<script src="js/photoToggler.js"></script> -->
-	  	<!-- <script src="js/fader.js"></script> -->
 	</head>
 
 	<body>
 		<img id="photos" src="" style="opacity: 0"/>
 
 		<div class="container">
-			<div id="header">
+			<div class="header">
 				<div class="row">
 					<div class="col-1 d-flex flex-column justify-content-center align-items-center" id="hamburger">
 						<a href="#">=</a>
 					</div>
 
-					<div class="col-10 d-flex flex-column justify-content-center align-items-center"><b><i>ONLINE</i></b></div>
+					<div class="col-10 justify-content-center align-items-center"><b><i>ONLINE</i></b></div>
 
 					<div class="col-1 d-flex flex-column justify-content-center align-items-center">+</div>
 				</div>
 			</div>
 
 			<div class="justify-content-center align-items-center" id="menu">
+				<div class="header">
+					<div class="row">
+						<div class="col-1 d-flex flex-column justify-content-center align-items-center" id="hamburger">
+							<a href="#">=</a>
+						</div>
+
+						<div class="col-10 justify-content-center align-items-center"><b><i>ONLINE</i></b></div>
+
+						<div class="col-1 d-flex flex-column justify-content-center align-items-center">+</div>
+					</div>
+				</div>
+				<br><br><br>
 				<ul>
-					<li><a href="#top">poems</a></li>
-						<ul>
-							<li><a href="#p01">dead pixels in the sky</a></li>
-							<li><a href="#p02">drowned sirens</a></li>
-							<li><a href="#p03">boy toy</a></li>
-							<li><a href="#p04">every time i see you i fall apart</a></li>
-							<li><a href="#p05">psychogeography</a></li>
-							<li><a href="#p06" onclick="toggler('p06');">p06</a></li>
-							<li><a href="#p07" onclick="toggler('p07');">p07</a></li>
-							<li><a href="#p08" onclick="toggler('p08');">p08</a></li>
-							<li><a href="#p09" onclick="toggler('p09');">p09</a></li>
-							<li><a href="#p10" onclick="toggler('p10');">p10</a></li>
-							<li><a href="#p11" onclick="toggler('p11');">p11</a></li>
-							<li><a href="#p12" onclick="toggler('p12');">p12</a></li>
-						</ul>
-					<li><div class="mainCat"><a href="#aboutTab">about</a></div></li>
+					<li><div class = "maincategory"><a id="poems" href="#top">poems</a></div></li></li>
+					<ul>
+						<li><div class = "poemsubcategory"><a href="#p01">dead pixels in the sky</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p02">drowned sirens</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p03">boy toy</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p04">every time i see you i fall apart</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p05">psychogeography</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p06">p06</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p07">p07</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p08">p08</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p09">p09</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p10">p10</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p11">p11</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p12">p12</a></div></li>
+					</ul>
+					<li><div class = "maincategory"><a id="about" href="#">about</a></div></li>
 					<li><a href="#dl" onclick="toggler('dl');">download</a></li>
 					<li><a href="#gr" onclick="toggler('gr');">gr</a></li>
 				</ul>
 			</div>
 
 		<div class="row">
-			<div class="col-md-4 d-none d-lg-block">
+			<div class="col-xl-4 d-none d-lg-block">
 				<div class="position-fixed" id="sidebar">
 					<b><i>ONLINE</i></b><br>
 					<ul>
-						<li><div class = "maincategory"><a href="#top">poems</a></div></li></li>
+						<li><div class = "maincategory"><a id="poems" href="#top">poems</a></div></li></li>
 						<ul>
-							<li><a href="#p01">dead pixels in the sky</a></li>
-							<li><a href="#p02">drowned sirens</a></li>
-							<li><a href="#p03">boy toy</a></li>
-							<li><a href="#p04">every time i see you i fall apart</a></li>
-							<li><a href="#p05">psychogeography</a></li>
-							<li><a href="#p06" onclick="toggler('p06');">p06</a></li>
-							<li><a href="#p07" onclick="toggler('p07');">p07</a></li>
-							<li><a href="#p08" onclick="toggler('p08');">p08</a></li>
-							<li><a href="#p09" onclick="toggler('p09');">p09</a></li>
-							<li><a href="#p10" onclick="toggler('p10');">p10</a></li>
-							<li><a href="#p11" onclick="toggler('p11');">p11</a></li>
-							<li><a href="#p12" onclick="toggler('p12');">p12</a></li>
+							<li><div class = "poemsubcategory"><a href="#p01">dead pixels in the sky</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p02">drowned sirens</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p03">boy toy</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p04">every time i see you i fall apart</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p05">psychogeography</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p06">p06</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p07">p07</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p08">p08</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p09">p09</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p10">p10</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p11">p11</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p12">p12</a></div></li>
 						</ul>
-						<li><a href="#aboutTab">about</a></li>
+						<li><div class = "maincategory"><a id="about" href="#aboutTab">about</a></div></li>
 						<li><a href="#dl" onclick="toggler('dl');">download</a></li>
 						<li><a href="#gr" onclick="toggler('gr');">gr</a></li>
 					</ul>
 				</div>
 			</div>
 
-			<div class="col-md-8 border border-primary border border-primary" id="poemsTab">
-				<a name = "top"></a>
-				<div class="poemPage" id="p01">
-					<br><br><br><br><br><br><br><br><br><br><br><br>
-					<div class="poemTitle"><h2>dead pixels in the sky</h2></div>
+			<div class="col-xl-8 col-lg-12" id="textarea">
+				<div id="poemsTab">
+					<a name = "top"></a>
+					<div class="poemPage" id="p01">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>dead pixels in the sky</h2></div>
 
-					<div class="poemText d-flex flex-column justify-content-center align-items-center">
-						dead pixels in the sky<br>
-						dots looking back at dots that are no longer to be seen<br>
-						people’s eyes turned to black holes<br>
-						and i fall into their void<br>
-						tightly handcuffed<br>
-						from the stress<br>
-						i can’t hitchhike<br>
-						and i get swallowed by a passing train<br>
-						ten floors deep in the ground<br>
-						breath taking and neck breaking to see the surface<br>
-						like a garden locked behind brutal barbed wire<br>
-						i pull my brains apart like headphone cords<br>
-						i look up to find a dot that looks back at me<br>
-						just to know if i’m still *here*<br>
-						or just kill time<br>
-						scraping temples with gun barrels<br>
-						rubbing off the rust<br>
-						or maybe paranoia
+						<div class="poemText d-flex flex-column justify-content-center align-items-center">
+							dead pixels in the sky<br>
+							dots looking back at dots that are no longer to be seen<br>
+							people’s eyes turned to black holes<br>
+							and i fall into their void<br>
+							tightly handcuffed<br>
+							from the stress<br>
+							i can’t hitchhike<br>
+							and i get swallowed by a passing train<br>
+							ten floors deep in the ground<br>
+							breath taking and neck breaking to see the surface<br>
+							like a garden locked behind brutal barbed wire<br>
+							i pull my brains apart like headphone cords<br>
+							i look up to find a dot that looks back at me<br>
+							just to know if i’m still *here*<br>
+							or just kill time<br>
+							scraping temples with gun barrels<br>
+							rubbing off the rust<br>
+							or maybe paranoia
+						</div>
+						<br><br><br>
 					</div>
-				</div>
-				<div class="poemPage" id="p02">
-					<br><br><br><br><br><br><br><br><br><br><br><br>
-					<div class="poemTitle"><h2>drowned sirens</h2></div>
-					the demon on my shoulder got the blinking lights on<br>
-					carving circles ‘round the block like my last name is kandinsky<br>
-					avoid shaking hands and looking into mirrors<br>
-					mad at myself<br>
-					searching for my pride that i got stamped out<br>
-					bumping into strangers and throwing feelings in the void<br>
-					as if i swapped my heart for an airplane’s black box<br>
-					buildings cruising through the water<br>
-					sirens hooked on by their nails crying on the cop cars<br>
-					screaming ringing in my skull like bells<br>
-					flickering between the waves<br>
-					barren bodies<br>
-					salt swollen neck wounds<br>
-					and i sink my teeth deep inside my arm<br>
-					not to make anymore sound for them to notice<br>
-					cause attention is a blade<br>
-					and it slices your throat open
-				</div>
-<!-- 					<div class="poemPage" id="p03">
-					<br><br><br><br><br><br><br><br><br><br><br><br>
-					<div class="poemTitle"><h2>boy toy</h2></div>
-					boy toy<br>
-					i’m a boy toy<br>
-					wearing knots around my neck weighting heavier than my ego<br>
-					shaping myself on others’ terms to stop catching the loneliness<br>
-					but i’m not alone<br>
-					your face turned blurry nowadays<br>
-					like a corrupted memory of mine<br>
-					you’re looking at me dead as stone<br>
-					your eyes cracked like two mirrors from the bitterness<br>
-					a modern medusa with whole lotta trust issues<br>
-					yet here we are laying numb from the dancing<br>
-					arms and legs are trembling to find their shapes<br>
-					or if they button up together out of vice or plain necessity<br>
-					like shooting stars my doubts are dropping on top of my chest<br>
-					if am i still or am i not just a<br>
-					boy toy<br>
-					i’m a boy toy
-				</div>
-				<div class="poemPage" id="p04">
-					<br><br><br><br><br><br><br><br><br><br><br><br>
-					<div class="poemTitle border border-primary"><h2>every time i see you i fall apart</h2></div>
+					<div class="poemPage" id="p02">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>drowned sirens</h2></div>
+						the demon on my shoulder got the blinking lights on<br>
+						carving circles ‘round the block like my last name is kandinsky<br>
+						avoid shaking hands and looking into mirrors<br>
+						mad at myself<br>
+						searching for my pride that i got stamped out<br>
+						bumping into strangers and throwing feelings in the void<br>
+						as if i swapped my heart for an airplane’s black box<br>
+						buildings cruising through the water<br>
+						sirens hooked on by their nails crying on the cop cars<br>
+						screaming ringing in my skull like bells<br>
+						flickering between the waves<br>
+						barren bodies<br>
+						salt swollen neck wounds<br>
+						and i sink my teeth deep inside my arm<br>
+						not to make anymore sound for them to notice<br>
+						cause attention is a blade<br>
+						and it slices your throat open
+						<br><br><br>
+					</div>
+	<!-- 					<div class="poemPage" id="p03">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>boy toy</h2></div>
+						boy toy<br>
+						i’m a boy toy<br>
+						wearing knots around my neck weighting heavier than my ego<br>
+						shaping myself on others’ terms to stop catching the loneliness<br>
+						but i’m not alone<br>
+						your face turned blurry nowadays<br>
+						like a corrupted memory of mine<br>
+						you’re looking at me dead as stone<br>
+						your eyes cracked like two mirrors from the bitterness<br>
+						a modern medusa with whole lotta trust issues<br>
+						yet here we are laying numb from the dancing<br>
+						arms and legs are trembling to find their shapes<br>
+						or if they button up together out of vice or plain necessity<br>
+						like shooting stars my doubts are dropping on top of my chest<br>
+						if am i still or am i not just a<br>
+						boy toy<br>
+						i’m a boy toy
+					</div>
+					<div class="poemPage" id="p04">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle border border-primary"><h2>every time i see you i fall apart</h2></div>
 
-					<div class="poemText border border-primary d-flex flex-column justify-content-center align-items-center">
-						i wanna lay where you lay<br>
-						dress you up with some nice words<br>
-						that sound funny standing up<br>
-						there’s no therapy on this side of the city<br>
-						and the words won’t find their way to you to tell you<br>
-						every time i see your face i fall apart<br>
-						hands get sticky<br>
-						you exist behind my eyelids<br>
-						and i delve into your stomach<br>
-						for the three hours that i sleep<br>
-						shooting my emotions deep<br>
-						coast to coast<br>
-						and i mourn the youth i spent<br>
-						with you or far away from you<br>
-						as a jailbird<br>
-						hanging from the bars of your sides<br>
-						i am yours<br>
-						i’m your prisoner
+						<div class="poemText border border-primary d-flex flex-column justify-content-center align-items-center">
+							i wanna lay where you lay<br>
+							dress you up with some nice words<br>
+							that sound funny standing up<br>
+							there’s no therapy on this side of the city<br>
+							and the words won’t find their way to you to tell you<br>
+							every time i see your face i fall apart<br>
+							hands get sticky<br>
+							you exist behind my eyelids<br>
+							and i delve into your stomach<br>
+							for the three hours that i sleep<br>
+							shooting my emotions deep<br>
+							coast to coast<br>
+							and i mourn the youth i spent<br>
+							with you or far away from you<br>
+							as a jailbird<br>
+							hanging from the bars of your sides<br>
+							i am yours<br>
+							i’m your prisoner
+						</div>
 					</div>
-				</div>
-				<div class="poemPage" id="p05">
+					<div class="poemPage" id="p05">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle border border-primary"><h2>psychogeography</h2></div>
+						<div class="poemText border border-primary d-flex flex-column justify-content-center align-items-center">
+							carved an anchor on my neck<br>
+							to pull my thoughts down<br>
+							when the need to log off ever comes<br>
+							i do deadlifts with my patience<br>
+							i feel like i don’t deserve it<br>
+							to exist<br>
+							and i fade away until i hit rock bottom<br>
+							with my lungs drained by the salt<br>
+							<br>
+							carved some seas upon my wrist<br>
+							and i sail them ‘round my block<br>
+							police cars and tourist buses pass right through me<br>
+							like they know i lost my faith<br>
+							but i still take breaths before i cross the streets<br>
+							and i hope as i keep swimming<br>
+							that you’ll find me and still recognize my body<br>
+							from its marks
+						</div>
+					</div> -->
 					<br><br><br><br><br><br><br><br><br><br><br><br>
-					<div class="poemTitle border border-primary"><h2>psychogeography</h2></div>
-					<div class="poemText border border-primary d-flex flex-column justify-content-center align-items-center">
-						carved an anchor on my neck<br>
-						to pull my thoughts down<br>
-						when the need to log off ever comes<br>
-						i do deadlifts with my patience<br>
-						i feel like i don’t deserve it<br>
-						to exist<br>
-						and i fade away until i hit rock bottom<br>
-						with my lungs drained by the salt<br>
-						<br>
-						carved some seas upon my wrist<br>
-						and i sail them ‘round my block<br>
-						police cars and tourist buses pass right through me<br>
-						like they know i lost my faith<br>
-						but i still take breaths before i cross the streets<br>
-						and i hope as i keep swimming<br>
-						that you’ll find me and still recognize my body<br>
-						from its marks
-					</div>
-				</div> -->
+				</div>
 
-				<div class="col-md-8 border border-primary border border-primary" id="aboutTab">
+
+				<div id="aboutTab">
+					<br><br><br><br><br><br><br><br><br><br><br><br>
 					It was around three months after I’ve been fired. I didn’t dare to talk about it much, but it wouldn’t that much of a mystery for someone to figure out why the short chick with the plaited hair isn’t on the cash register giving wrong change to the old ladies anymore. To be perfectly honest, I was pretty devastated that I managed to fail even at working at the supermarket, where all you needed to get a grip was knowing how to count, wearing an “Olga” tag like a war medal, and acting like everything’s okay at all times. Maybe that’s why I ended up sneaking into it like a thief that day, out of stubbornness. It was the last sense of routine I had while everything was going under outside the window.<br>
 					<br>
 					I could barely get out the bed before four in the afternoon. And when I did, all I had planned was dragging my body before the tv to catch some telemarketing and dumb commercials until the sun was out again and I successfully forgot who I am and what I’m going through. Because what other choices did I have really? For the last two years I was jumping from one dead end job to the next, either until I get fired or until I quit. I was leaving on benefits and a sad amount of savings, and I was starting to accept the fact that this would be my life from now on. Like, what else did I really have to rely on? Studies? Big deal, the world wouldn’t end with just one english teacher less. Friends? Don’t get me started. Family? All I was left with was a mother with a mission to make me feel horrible every time we spoke on the phone because I wasn’t bothering to go see her. But even if I did, what would I have to say to her? I was mentally collapsing. So I said “leave it for now” and kept the thought pushed back for later. That’s the reason why on that particular day I didn’t pick up whenever my mom was ringing this cherry ericsson I had at the time. It wasn’t like I really needed to answer, I already knew everything by heart.<br>
@@ -225,49 +242,20 @@
 					“But don’t you ever think about your future?”.<br>
 					<br>
 					My long awaited future, huh? What a glorious future that was. It was so good, half of the people I used to know didn’t make it halfway through.
+					<br><br><br>
 				</div>
 
 			</div>
 			
 
-				<!-- <div class="test d-flex flex-column justify-content-center align-items-center">TEST</div> -->
-
 				<!-- 
 				TODO:
-				* fix hide-showin tabs
-				* ...
+				* fix image fade in/out issue
+				* fix image max width-height per portrait/landscape photo width/height
 				 -->
 		</div>
 
-		
-
-<!-- 		<script type="text/javascript">
-			(function makeDiv(){
-				var divsize = ((Math.random()*600) + 50).toFixed();
-				var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
-
-				$newdiv = $('<div/>').css({
-				'width':divsize+'px',
-				'height':divsize+'px',
-				'background-color': color,
-				'opacity': 0.4
-				});
-
-				var posx = (Math.random() * ($(document).width() - divsize)).toFixed();
-				var posy = (Math.random() * ($(document).height() - divsize)).toFixed();
-
-				$newdiv.css({
-				  'position':'absolute',
-				  'left':posx+'px',
-				  'top':posy+'px',
-				  'display':'none'
-				}).appendTo( 'body' ).fadeIn(500).delay(1000).fadeOut(500, function(){
-				$(this).remove();
-				makeDiv(); 
-				}); 
-			})();
-		</script> -->
-
+	
 
 		<script type="text/javascript">
 			var duration = 2;
@@ -314,43 +302,8 @@
 			}
 
 			var transitionTime = window.getComputedStyle(document.querySelector('#photos')).getPropertyValue('transition-duration').match(/\d+/)[0];
-			var totalTime = duration*1000 + transitionTime*2000;
+			var totalTime = duration*1000 + transitionTime*2000 - 100;
 			setInterval(fader, totalTime);
 		</script>
-
-		<!-- 		<script type="text/javascript">
-			var duration = 2;
-			var arrayImg = new Array();
-			arrayImg[0] = "https://i.imgur.com/AUmxR5f.jpeg";
-			arrayImg[1] = "https://i.imgur.com/wp9JSyC.jpeg";
-			arrayImg[2] = "https://i.imgur.com/HmDUCqy.jpeg";
-			arrayImg[3] = "https://i.imgur.com/7Uv4yBW.jpeg";
-
-			function getRandomImage(imgAr) {
-			    var num = Math.floor( Math.random() * imgAr.length );
-			    var img = imgAr[ num ];
-			    return img;
-			};
-
-			function fillImg(imgId) {
-			  var tgt = document.querySelector(imgId);
-			  tgt['src'] = getRandomImage(arrayImg);
-			};
-
-			function fader() {
-			  var tgt = document.querySelector('#target');
-			  fillImg('#target');
-			  tgt.style.opacity = 1;
-			  
-			  tgt.ontransitionend = () => {
-			    if (tgt.style.opacity == 1) {
-			      setTimeout(() => {tgt.style.opacity = 0;}, duration*1000);
-			    }
-			  }
-			}
-			var transitionTime = window.getComputedStyle(document.querySelector('#target')).getPropertyValue('transition-duration').match(/\d+/)[0];
-			var totalTime = duration*1000 + transitionTime*2000;
-			setInterval(fader, totalTime);
-		</script> -->
 	</body>
 </html>
