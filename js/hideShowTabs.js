@@ -8,17 +8,14 @@ $(document).ready
         {
             var x = this.id;
 
-
-
         	$("#textarea").children().hide();
             $("#" + x + "Tab").fadeToggle();  
+            $("#" + x + "Tab").parent().css('z-index', 3); // non-poems tab standing above photos
         });
 
         $("#sidebar .poemsubcategory a").click(function() 
         {
         	var x = this.id;
-
-            console.log("EHEEEE " + x)
 
         	$("#textarea").children().hide();
             $("#poemsTab").fadeToggle();
@@ -31,6 +28,7 @@ $(document).ready
 
             $("#textarea").children().hide();
             $("#" + x + "Tab").fadeToggle();
+            $("#" + x + "Tab").parent().css('z-index', 3); // non-poems tab standing above photos
         });
 
         $("#menu .poemsubcategory a").click(function() 

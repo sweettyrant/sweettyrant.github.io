@@ -193,6 +193,9 @@ a:active {color: #7b404b}
 
 
 
+#photos {z-index: 1; position: absolute; transition: opacity 1s ease-in-out;}
+
+
 
 /*For desktop*/
 @media all and (orientation:landscape)
