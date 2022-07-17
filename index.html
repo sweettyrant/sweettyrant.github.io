@@ -26,7 +26,7 @@
 			<div class="header">
 				<div class="row">
 					<div class="col-1 d-flex flex-column justify-content-center align-items-center" id="hamburger">
-						<a href="#">+</a>
+						<a href="#"><b>+</b></a>
 					</div>
 
 					<div class="col-10" id="headerTitle"><img src="img/title_en_blur.png"></div>
@@ -46,7 +46,7 @@
 						<li><div class = "poemsubcategory"><a href="#p03">WHAT'S YOUR NAME</a></div></li>
 						<li><div class = "poemsubcategory"><a href="#p04">GOOD FIRST IMPRESSION</a></div></li>
 						<li><div class = "poemsubcategory"><a href="#p05">IT'S NOT PERSONAL</a></div></li>
-						<li><div class = "poemsubcategory"><a href="#p06">p06</a></div></li>
+						<li><div class = "poemsubcategory"><a href="#p06">PRIDE AND STRESS</a></div></li>
 						<li><div class = "poemsubcategory"><a href="#p07">p07</a></div></li>
 						<li><div class = "poemsubcategory"><a href="#p08">p08</a></div></li>
 						<li><div class = "poemsubcategory"><a href="#p09">p09</a></div></li>
@@ -76,7 +76,7 @@
 							<li><div class = "poemsubcategory"><a href="#p03">WHAT'S YOUR NAME</a></div></li>
 							<li><div class = "poemsubcategory"><a href="#p04">GOOD FIRST IMPRESSION</a></div></li>
 							<li><div class = "poemsubcategory"><a href="#p05">IT'S NOT PERSONAL</a></div></li>
-							<li><div class = "poemsubcategory"><a href="#p06">p06</a></div></li>
+							<li><div class = "poemsubcategory"><a href="#p06">PRIDE AND STRESS</a></div></li>
 							<li><div class = "poemsubcategory"><a href="#p07">p07</a></div></li>
 							<li><div class = "poemsubcategory"><a href="#p08">p08</a></div></li>
 							<li><div class = "poemsubcategory"><a href="#p09">p09</a></div></li>
@@ -208,6 +208,25 @@
 							and if you leave i'm gonna let you
 						<br><br><br>
 					</div>
+					<div class="poemPage" id="p06">
+						<br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="poemTitle"><h2>PRIDE AND STRESS</h2></div>
+							<br>
+							smoking on the traffic islands<br>
+							waiting for the green light<br>
+							my people are getting old<br>
+							yet still dive for the cross<br>
+							just to feel their muscles loose<br>
+							pride and stress<br>
+							hands 'round necks<br>
+							overpriced one room apartments with a window open to let the dream breathe<br>
+							my people dance the night away like they're on fire<br>
+							in front of speakers<br>
+							till their brains start leaking on their chests<br>
+							this city's just a pair of handcuffs at the bottom of the sea<br>
+							they're in too deep now for their voices to be heard
+						<br><br><br>
+					</div>
 					<br><br><br><br><br><br><br><br><br><br><br><br>
 				</div>
 
@@ -239,7 +258,7 @@
 			</div>
 		</div>
 
-	
+
 
 		<script type="text/javascript">
 			var duration = 5;
@@ -249,6 +268,7 @@
 			arrayImg[2] = "img/03.jpg";
 			arrayImg[3] = "img/04.jpg";
 			arrayImg[4] = "img/05.jpg";
+			arrayImg[5] = "img/06.jpg";
 
 			function getRandomImage(imgAr) {
 			    var num = Math.floor( Math.random() * imgAr.length );
@@ -278,7 +298,6 @@
 			  tgt.style.left = posx+'px';
 			  tgt.style.top = posy+'px';
 
-			  
 			  tgt.ontransitionend = () => {
 			    if (tgt.style.opacity == 0.5) {
 			      setTimeout(() => {tgt.style.opacity = 0;}, duration*500);
